@@ -1,0 +1,15 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "mago-mi",
+			"request": "launch",
+			"name": "Build & Debug (Native Debug)",
+			"target": "${workspaceFolder}/buildtesr.exe",
+			"cwd": "${workspaceFolder}",
+			"magomipath": "${workspaceFolder}/tools/mago-mi.exe",
+			"preLaunchTask": "dub: build debug",
+			"valuesFormatting": "parseText"
+		}
+	]
+}

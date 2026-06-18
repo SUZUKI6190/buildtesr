@@ -1,0 +1,12 @@
+{
+	"authors": [
+		"admin"
+	],
+	"copyright": "Copyright © 2026, admin",
+	"description": "A minimal D application.",
+	"license": "proprietary",
+	"name": "buildtesr",
+	"buildOptions-windows": [
+		"debugInfoC"
+	]
+}
