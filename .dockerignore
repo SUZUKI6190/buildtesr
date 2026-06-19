@@ -1,0 +1,8 @@
+.git
+.vscode
+.dub
+*.exe
+*.pdb
+*.obj
+*.o
+*.log

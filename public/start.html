@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>地図Webアプリ - スタート</title>
+	<style>
+		:root {
+			color-scheme: light;
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+		}
+
+		body {
+			align-items: center;
+			background: linear-gradient(135deg, #e0f2fe 0%, #f8fafc 50%, #dcfce7 100%);
+			display: flex;
+			justify-content: center;
+			margin: 0;
+			min-height: 100vh;
+		}
+
+		main {
+			text-align: center;
+		}
+
+		h1 {
+			color: #0f172a;
+			font-size: clamp(2rem, 5vw, 3.5rem);
+			margin: 0 0 2rem;
+		}
+
+		a {
+			background: #2563eb;
+			border-radius: 999px;
+			box-shadow: 0 18px 40px rgba(37, 99, 235, 0.28);
+			color: white;
+			display: inline-block;
+			font-size: 1.25rem;
+			font-weight: 700;
+			padding: 1rem 3rem;
+			text-decoration: none;
+			transition: transform 160ms ease, box-shadow 160ms ease;
+		}
+
+		a:hover,
+		a:focus-visible {
+			box-shadow: 0 22px 48px rgba(37, 99, 235, 0.36);
+			transform: translateY(-2px);
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<h1>地図Webアプリ</h1>
+		<a href="/map">スタート</a>
+	</main>
+</body>
+</html>

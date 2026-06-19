@@ -3,6 +3,12 @@
 		"admin"
 	],
 	"copyright": "Copyright © 2026, admin",
+	"dependencies": {
+		"vibe-d": "~>0.10"
+	},
+	"copyFiles": [
+		"public/"
+	],
 	"description": "A minimal D application.",
 	"license": "proprietary",
 	"name": "buildtesr",
