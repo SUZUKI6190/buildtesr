@@ -1,7 +1,22 @@
 import std.conv : to;
+import  std.stdio;
+
 import std.file : readText;
 import std.process : environment;
 import vibe.vibe;
+// WebAPIの定義
+interface MyAPI {
+    string getHello();
+}
+
+class MyAPIImpl : MyAPI {
+    string getHello() { return "Hello World"; }
+}
+
+void anything(HTTPServerRequest req, HTTPServerResponse res)
+{
+	writeln("API Global Interceptor");
+}
 
 void main()
 {
@@ -10,6 +25,9 @@ void main()
 	settings.port = environment.get("PORT", "8080").to!ushort;
 
 	auto router = new URLRouter;
+
+    // すべてのリクエストで通る前処理
+    router.any("*", &anything);
 	router.get("/", &showStartPage);
 	router.get("/map", &showMapPage);
 	router.get("/health", &showHealth);
